@@ -1,0 +1,158 @@
+@extends('layouts.main')
+@section('content')
+    <div class="main-wrapper">
+        <div role="navigation" class="navbar navbar-default navbar-static-top">
+            <div class="container">
+               
+            @section('content')
+            </div>
+            </div>
+            </div>
+        <div class="section grey text-center m-t-60 p-t-40 p-b-40" id="banner-footer">
+            <h2 class="normal m-b-10">
+                We would love to hear from you</h2>
+            <p>
+                Why not drop us a line or pick up the phone and give us a shout. Our team would
+                love to talk to you and find ways of Making Business Easy.</p>
+        </div>
+        <div class="section white">
+            <div class="container">
+                <div class=" p-b-60">
+                    <div class="row p-t-30">
+                        <div class="col-md-6 col-sm-6">
+						<form id="contact_form" method="post" action="#">
+                            <div class="row form-row">
+                                <div class="col-md-10">
+                                    <input name="txtFirstName" id="textFirstName" type="text" class="form-control "
+                                        placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="row form-row">
+                                <div class="col-md-10">
+                                    <input name="txtLastName" id="txtLastName" type="text" class="form-control" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="row form-row">
+                                <div class="col-md-10">
+                                    <input name="txtCompany" id="txtCompany" type="text" class="form-control" placeholder="Company/Orgarnization">
+                                </div>
+                            </div>
+                            <div class="row form-row">
+                                <div class="col-md-10">
+                                    <input name="txtEmailAddress" id="txtEmailAddress" type="text" class="form-control"
+                                        placeholder="Email address">
+                                </div>
+                            </div>
+                            <div class="row form-row">
+                                <div class="col-md-10">
+                                    <textarea id="txtDesc" name="txtMessage" type="text" class="form-control" placeholder="Message" rows="8">
+						
+						</textarea>
+                                </div>
+                            </div>
+                            <div class="row form-row">
+                                <div class="col-md-10">
+                                    <button type="button" id="button-send" class="btn btn-primary btn-cons">
+                                        Send</button>
+                                </div>
+								<div id="success">Your message has been successfully!</div>
+								<div id="error">Unable to send your message, please try later.</div>
+                            </div>
+						</form>
+                        </div>
+                        <div class="col-md-6 feature-list">
+                            <h4 class="title custom-font text-black no-margin p-b-10">
+                                TELEPHONE</h4>
+                            <p class="no-margin">
+                                Sales</p>
+                            <h2 class="custom-font text-black no-margin">
+                                (123) 456-7890</h2>
+                            <p class="no-margin">
+                                Technical</p>
+                            <h2 class="custom-font text-black no-margin">
+                                (111) 111-2233</h2>
+                            <section class="p-t-20 p-b-20">
+                                <h4 class="title custom-font text-black">
+                                    ADDRESS</h4>
+                                <ul class="address-list">
+                                    <li><i class="fa fa-map-marker"></i><strong>Address:</strong> 1234 Street Name, City
+                                        Name, United States</li>
+                                    <li><i class="fa fa-phone"></i><strong>Phone:</strong> (123) 456-7890</li>
+                                    <li><i class="fa fa-envelope"></i><strong>Email:</strong> <a href="mailto:mail@example.com">
+                                        mail@example.com</a></li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section white" style="height: 350px" id="map">
+        </div>
+        <div class="section grey">
+            <div class="container">
+                <div class="p-t-60 p-b-50">
+                    <div id="testomonials" class="owl-carousel row">
+                        <div class="item">
+                            <div class="col-md-6  col-md-offset-3 text-center">
+                                <div class="testimonial-thumb">
+                                    <img src="assets/img/testimonial_img1.png" alt="testimonal">
+                                </div>
+                                <div class="testimonial-user">
+                                    <span>John Donga</span> Greepit.com
+                                </div>
+                                <h3 class="normal text-center">
+                                    I have always received good service from the Frittt Templates. Timing and quality
+                                    have always met my expectations and everything is communicated in a professional
+                                    and timely manner.
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-6   col-md-offset-3 text-center">
+                                <div class="testimonial-thumb">
+                                    <img src="assets/img/testimonial_img2.png" alt="testimonal">
+                                </div>
+                                <div class="testimonial-user">
+                                    <span>John Donga</span> Frittt.com
+                                </div>
+                                <h3 class="normal text-center">
+                                    We consider the Frittt Templates team a development partner who has proven to be
+                                    creative in problem resolution, reliable in time commitments, and overall consistent
+                                    in meeting our expectations.
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-6   col-md-offset-3 text-center">
+                                <div class="testimonial-thumb">
+                                    <img src="assets/img/testimonial_img3.png" alt="testimonal">
+                                </div>
+                                <div class="testimonial-user">
+                                    <span>John Donga</span> www.Frittt.com
+                                </div>
+                                <h3 class="semi-bold text-center">
+                                    The work was above and beyond what I could have expected. Excellent service all
+                                    the way around from start to finish. Keep up the GREAT work! Great job!
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         </div>
+    <!-- BEGIN CORE JS FRAMEWORK -->
+    <script type="text/javascript" src="assets/plugins/jquery-1.8.3.min.js"></script>
+    <script src="assets/plugins/boostrapv3/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- END CORE JS FRAMEWORK -->
+    <!-- BEGIN JS PLUGIN -->
+    <script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-unveil/jquery.unveil.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-nicescroll/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="assets/plugins/jquery-gmap/gmaps.js" type="text/javascript"></script>
+    <!-- END JS PLUGIN -->
+    <script src="assets/js/google_maps.js" type="text/javascript"></script>
+    <script type="text/javascript" src="assets/js/core.js"></script>
+  @endsection
